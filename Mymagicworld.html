@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>My Magic Word Lab</Title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            body{ background: lightyellow;}
+            h1,h3 { color: darkorange; }
+            .box{ background: white; color: darkorange;}
+            </style>          
+    </head>
+    <body>
+        <div class="container py-4">
+            <h1 class="mb-1">My Magic Word Lab</h1>
+            <p class="text muted mb-4">Discover Types, Switch them, Find and Swap words, and catch sneaky errors!!</p>
+            <!--Topic1:typeof-->
+            <div class="card mb-4"><div class="card-body">
+                <h3 class="card-title">What type is it!!</h3>
+                <button class="btn btn-warning" onclick="checktypes()">Reveal the types!</button>
+                <div id="typeresult" class="box p-3 mt-3 rounded">Press The button to reveal the secret types!
+                  </div>
+            </div>
+        </div>
+        <!--Topic2: String() and Number()-->
+        <div class="card mb-4"><div class="card-body">
+           <h3 class="card-title">Switch the types</h3>
+           <input id="numIn" class="form-control mb-2" placeholder="Type any number here (try: 42)">
+           <button class="btn btn warning mr-2" onclick="tostr()">Turn into text</button> 
+           <button class="btn btn warning " onclick="tonum()">Turn into number</button> 
+           <div id="convresult" class="box p-3 mt-3 rounded">Type a number above then press the button</div>
+        </div>
+        <!--Topic3:search() and Replace()-->
+        <div class="card mb-4"><div class="card-body">
+             <h3 class="card-title">Find and Swap the word</h3>
+              <input id="findW" class="form-control mb-2" placeholder="Word to find (try: dragon)">
+               <input id="sawpW" class="form-control mb-2" placeholder="Swap it with (try: wizard)">
+               <button class="btn btn warning " onclick="doSearch()">Find It!</button>
+               <button class="btn btn warning " onclick="doReplace()">Swap It</button>
+               <div id="srResult" class="box p-3 mt-3 rounded">Sentence: "The Dragon flew over the big castle</div>
+        </div>
+        <!--Topic4: Try/Catch-->
+        <div class="card mb-4"><div class="card-body">
+             <h3 class="card-title">Catch The Mistake</h3>
+              <input id="divIN" class="form-control mb-2" placeholder="Divide 100 by this - try a number or try something silly">
+              <button class="btn btn warning " onclick="trySafe()">Try It!</button>              
+               <div id="srResult" class="box p-3 mt-3 rounded">try a number or try something silly and see what happens</div>
+        </div>
+
+    </body>
+
+</html>
